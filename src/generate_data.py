@@ -50,4 +50,7 @@ df = pd.DataFrame(data, columns=["Timestamp", "Amount", "Country", "User ID", "F
 print(df.head())  # Print the first few rows of the DataFrame
 
 # Save the DataFrame to a CSV file
-df.to_csv('synthetic_credit_card_transactions.csv', index=False)
+data_folder_path = './data/synthetic_credit_card_transactions.csv'
+
+# Save the DataFrame to a CSV file in the 'data' folder
+df.to_csv(data_folder_path, index=False)
